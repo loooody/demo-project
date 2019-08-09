@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/es?characterEncoding=utf-8&useSSL=false
+    jpa:
+      show-sql: true
+  thymeleaf: classpath:/templates/
+  data:
+    elasticsearch:
+      cluster-nodes: 10.0.19.169:9300
+      repositories:
+        enabled: true
+      cluster-name: demo
+  mvc:
+    static-path-pattern: /static/**
+jobs.corn: 0/2 * * * * ?
+server:
+  servlet:
+    context-path: /es_demo
