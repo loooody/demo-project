@@ -1,0 +1,7 @@
+spring:
+  mvc:
+    static-path-pattern: /static/**
+server:
+  port: 8081
+  servlet:
+    context-path: /rest_demo
